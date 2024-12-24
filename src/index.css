@@ -1,0 +1,30 @@
+:root {
+  --text-color: #454958;
+  --link-color: #0341c0;
+  --bg-color-button: linear-gradient(
+    124deg,
+    rgba(1, 62, 191, 1) 0%,
+    rgba(43, 129, 201, 1) 100%
+  );
+  --text-support-color: #ababab;
+  --border-input-color: #d8deee;
+  --color-button-card: #2274C7;
+
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  background-color: #ffffff;
+  width: 1440px;
+  padding: 0 20px;
+  margin: 0 auto;
+  color: var(--text-color);
+}
+
+.link {
+  color: var(--link-color);
+}
+
+h1 {
+  font-size: 64px;
+  font-weight: 700;
+}

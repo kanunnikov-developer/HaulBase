@@ -1,0 +1,72 @@
+.container-left {
+  height: 100vh;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+}
+
+.title span {
+  margin-left: 6px;
+}
+
+.text {
+  width: 400px;
+  text-align: center;
+  font-size: 16px;
+}
+
+.faq {
+  width: 400px;
+  text-align: center;
+  color: var(--text-support-color);
+  font-size: 16px;
+}
+
+.toogle-buttons {
+  margin-top: 25px;
+  width: 400px;
+  border: 1px solid var(--border-input-color);
+  border-radius: 10px;
+  padding: 5px;
+  display: flex;
+  position: relative;
+}
+
+.toogle-button {
+  width: 194px;
+  height: 50px;
+  font-size: 16px;
+  align-items: center;
+  transition: color 0.2s ease;
+  z-index: 0;
+}
+
+.toogle-buttons::before {
+  width: 194px;
+  height: 50px;
+  margin-top: 5px;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 5px;
+  right: 0;
+  bottom: 0;
+  border-radius: 10px;
+  transform: translateX(0);
+  transition: 0.2s ease-in;
+  background: var(--bg-color-button);
+  z-index: -1;
+}
+
+.toogle-buttons.active::before {
+  transform: translateX(0);
+}
+
+.toogle-buttons:not(.active)::before {
+  transform: translateX(100%);
+}
+
+.toogle-button.active {
+  color: white;
+}

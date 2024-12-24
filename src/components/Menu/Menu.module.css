@@ -1,0 +1,43 @@
+.menu {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.menu ul {
+  display: flex;
+  align-items: center;
+  gap: 35px;
+}
+
+.menu ul li {
+  width: 115px;
+  text-align: center;
+  transition: 0.2s ease;
+}
+
+.menu ul li:hover {
+  font-weight: 600;
+}
+
+.link {
+  font-size: 20px;
+  color: var(--text-color);
+}
+
+.link:focus {
+  font-weight: 600;
+}
+
+.button {
+  color: white;
+  padding: 15px 40px;
+  font-size: 16px;
+  font-weight: 300;
+  transition: 0.2s ease-in;
+}
+
+.button:hover {
+  opacity: 90%;
+}

@@ -1,0 +1,15 @@
+.input {
+  border: 1px solid var(--border-input-color);
+  border-radius: 10px;
+  font-size: 16px;
+  padding: 20px;
+  width: 400px;
+}
+
+.input::placeholder {
+  opacity: 50%;
+}
+
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 30px white inset;
+}
